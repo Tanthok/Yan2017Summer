@@ -24,17 +24,22 @@
         android:textSize="24sp"/>
 
     <Button
+        android:text="T"
+        android:textSize="24sp"
+        android:textColor="@color/white"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_centerVertical="true"
         android:layout_marginLeft="15dp"
+        android:background="@drawable/bt_bg"
         android:layout_alignParentLeft="true"/>
 
     <Button
-        android:layout_width="50dp"
+        android:layout_width="55dp"
         android:layout_height="50dp"
         android:layout_centerVertical="true"
         android:layout_marginRight="15dp"
+        android:background="@drawable/bt_icon_bg"
         android:layout_alignParentRight="true"/>
 
     </RelativeLayout>
