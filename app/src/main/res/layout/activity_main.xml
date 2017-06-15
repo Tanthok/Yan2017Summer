@@ -22,7 +22,7 @@
         android:layout_centerInParent="true"
         android:gravity="center"
         android:textSize="24sp"/>
-
+<!--Top Left Orange Button-->
     <Button
         android:text="T"
         android:textSize="24sp"
@@ -33,12 +33,13 @@
         android:layout_marginLeft="15dp"
         android:background="@drawable/bt_bg"
         android:layout_alignParentLeft="true"/>
-
+<!--Top Right Green Button-->
     <Button
         android:layout_width="55dp"
         android:layout_height="50dp"
         android:layout_centerVertical="true"
         android:layout_marginRight="15dp"
+        android:onClick="login"
         android:background="@drawable/bt_icon_bg"
         android:layout_alignParentRight="true"/>
 
@@ -53,6 +54,7 @@
         android:layout_alignParentBottom="true">
         
         <TextView
+            android:id="@+id/activity_tool_demo"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
@@ -67,6 +69,7 @@
             android:layout_weight="0.05"
             android:background="@android:color/darker_gray"></View>
         <TextView
+            android:id="@+id/activity_tool_work"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
@@ -77,11 +80,14 @@
             android:textColor="@android:color/black"/>
 
         </LinearLayout>
-        <ListView
+    <!--Below-Orinentation and Id added with Fragment-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/activity_main_fragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/activity_main_title"
             android:layout_above="@id/activity_main_tool"
             android:background="@android:color/darker_gray"
-            ></ListView>
+            ></LinearLayout>
     </RelativeLayout>
