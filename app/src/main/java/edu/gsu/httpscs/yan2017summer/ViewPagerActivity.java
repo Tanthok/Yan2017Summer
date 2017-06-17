@@ -24,20 +24,18 @@ public class ViewPagerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_pager);
-        //This is the Create of a Fragment Having Three Pages Green,Red,Blue
         Toast.makeText(this,"onCreate",Toast.LENGTH_SHORT).show();
-        Log.d("LifeCycle","OnCreate");
-        viewPager = (ViewPager) findViewById(R.id.activity_view_pager);
+        Log.d("LifeCycle","onCreate");
+        viewPager = (ViewPager)findViewById(R.id.activity_view_pager);
+        //This is the Create of a Fragment Having Three Pages Green,Red,Blue
         list.add(new RedFragment());
         list.add(new GreenFragment());
         list.add(new BlueFragment());
         BaseViewPagerAdapter pagerAdapter = new BaseViewPagerAdapter(getSupportFragmentManager(),list);
         viewPager.setAdapter(pagerAdapter);
         //viewPager.setNestedScrollingEnabled(true);
-        viewPager.setCurrentItem(1); //is a way to set what page you want the user to see first with in a fragment
-
+        viewPager.setCurrentItem(1); //Is a way to set what page you want the user to see first with in a fragment
     }
-
     public ViewPagerActivity() {
         super();
     }

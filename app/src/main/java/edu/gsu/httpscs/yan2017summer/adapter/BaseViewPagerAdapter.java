@@ -2,7 +2,7 @@ package edu.gsu.httpscs.yan2017summer.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.app.FragmentPagerAdapter;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * Created by Tan-AlienwareTower on 6/14/2017.
  */
 
-public class BaseViewPagerAdapter extends FragmentStatePagerAdapter {
+public class BaseViewPagerAdapter extends FragmentPagerAdapter {
 
     private ArrayList<Fragment> list;
 

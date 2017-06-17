@@ -13,7 +13,10 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import edu.gsu.httpscs.yan2017summer.LaunchModeActivity;
+import edu.gsu.httpscs.yan2017summer.NotificationActivity;
 import edu.gsu.httpscs.yan2017summer.R;
+import edu.gsu.httpscs.yan2017summer.ScaleTypeActivity;
 import edu.gsu.httpscs.yan2017summer.ViewPagerActivity;
 import edu.gsu.httpscs.yan2017summer.adapter.ListNormalAdapter;
 
@@ -25,16 +28,15 @@ public class DemoFragment extends Fragment {
 
     public DemoFragment() {
 //        Fake Content
-        context=getContext();
+        context = getContext();
         contentList = new ArrayList<String>();
         contentList.add("ViewPager");
         contentList.add("ImageScaleType");
-        contentList.add("Notification");
         contentList.add("9Patch");
-        contentList.add("A");
+        contentList.add("Notification");
         contentList.add("B");
         contentList.add("C");
-        contentList.add("D");
+        contentList.add("LaunchMode");
         contentList.add("E");
         contentList.add("F");
         contentList.add("G");
@@ -45,26 +47,38 @@ public class DemoFragment extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState){
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle saveInstanceState){
+                             Bundle saveInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_demo,container,false);
-        listView = (ListView)view.findViewById(R.id.fragment_demo_lv);//Getting ID number of specific page of this ListView
-        ListNormalAdapter adapter = new ListNormalAdapter(this.getContext(),contentList);//Pulling Content from specific View ID
+        View view = inflater.inflate(R.layout.fragment_demo, container, false);
+        listView = (ListView) view.findViewById(R.id.fragment_demo_lv);//Getting ID number of specific page of this ListView
+        ListNormalAdapter adapter = new ListNormalAdapter(this.getContext(), contentList);//Pulling Content from specific View ID
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-            @Override
-            public void onItemClick(AdapterView<?> parent,View view, int position, long id){
-                switch (position){
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                This is list of Activities the user can pick from
+                switch (position) {
                     case 0:
                         Intent intent = new Intent(getActivity(), ViewPagerActivity.class);
                         startActivity(intent);
+                        break;
+                    case 1:
+                        Intent intent1 = new Intent(getActivity(), ScaleTypeActivity.class);
+                        startActivity(intent1);
+                        break;
+                    case 3:
+                        Intent intent3 = new Intent(getActivity(), NotificationActivity.class);
+                        startActivity(intent3);
+                        break;
+                    case 6:
+                        Intent intent6 = new Intent(getActivity(), LaunchModeActivity.class);
+                        startActivity(intent6);
                         break;
                     default:
                 }
@@ -74,5 +88,4 @@ public class DemoFragment extends Fragment {
         "return= ListView)view.findViewById(R.id.fragment_demo_lv);//Getting ID number of specific page
         Can be used to show and empty view*/
     }
-
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--Header Text Size-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:text="fitend"/>
+    <!--Panda Picture on Top-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_blue_light"
+        android:src="@mipmap/panda"
+        android:scaleType="fitEnd"
+        android:layout_weight="10"
+        />
+    <!--Castle Picture on Bottm-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        android:src="@mipmap/pic1"
+        android:scaleType="fitEnd"
+        android:layout_weight="10"/>
+
+
+</LinearLayout>

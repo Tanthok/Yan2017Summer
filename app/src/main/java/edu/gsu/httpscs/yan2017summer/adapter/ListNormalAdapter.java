@@ -28,7 +28,8 @@ public class ListNormalAdapter extends BaseAdapter {
         this.context = context;
         this.list = list;
         //Reason4 inflater.. helps on Convert a Layout to a View
-        inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater = (LayoutInflater)context.getSystemService
+                (Context.LAYOUT_INFLATER_SERVICE);
     }
     //for STATIC   --Sets the Number on Items Ex.) "return 100" would have 100 items
     // for DYNAMIC --we add ArrayList<String> as parameter
