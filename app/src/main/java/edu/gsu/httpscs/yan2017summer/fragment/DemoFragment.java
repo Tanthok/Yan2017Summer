@@ -13,6 +13,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import edu.gsu.httpscs.yan2017summer.AdvanceListViewActivity;
 import edu.gsu.httpscs.yan2017summer.LaunchModeActivity;
 import edu.gsu.httpscs.yan2017summer.NotificationActivity;
 import edu.gsu.httpscs.yan2017summer.R;
@@ -34,7 +35,7 @@ public class DemoFragment extends Fragment {
         contentList.add("ImageScaleType");
         contentList.add("9Patch");
         contentList.add("Notification");
-        contentList.add("B");
+        contentList.add("AdvanceListView");
         contentList.add("C");
         contentList.add("LaunchMode");
         contentList.add("E");
@@ -76,16 +77,20 @@ public class DemoFragment extends Fragment {
                         Intent intent3 = new Intent(getActivity(), NotificationActivity.class);
                         startActivity(intent3);
                         break;
+                    case 4:
+                        Intent intent4 = new Intent(getActivity(), AdvanceListViewActivity.class);
+                        startActivity(intent4);
+                        break;
                     case 6:
                         Intent intent6 = new Intent(getActivity(), LaunchModeActivity.class);
                         startActivity(intent6);
-                        break;
                     default:
                 }
             }
         });
         return view; /*For Testing Purpose
-        "return= ListView)view.findViewById(R.id.fragment_demo_lv);//Getting ID number of specific page
+        "return= (ListView)view.findViewById(R.id.fragment_demo_lv);//Getting ID number of specific page
         Can be used to show and empty view*/
     }
 }
+

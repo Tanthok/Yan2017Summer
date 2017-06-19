@@ -31,4 +31,14 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"/>
     </RelativeLayout>
+    <!--Adding Text to the AdvanceListView-->
+    <TextView
+        android:id="@+id/activity_advance_list_item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_centerVertical="true"
+        android:hint="Test"
+        android:textColor="@android:color/white"
+        android:gravity="center_vertical"
+        android:textSize="26sp"/>
 </RelativeLayout>

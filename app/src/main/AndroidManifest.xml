@@ -19,7 +19,9 @@
         <activity android:name=".ViewPagerActivity" />
         <activity android:name=".ScaleTypeActivity" />
         <activity android:name=".NotificationActivity" />
-        <activity android:name=".AdvanceListViewActivity"></activity>
+        <activity android:name=".LaunchModeActivity" />
+        <activity android:name=".AdvanceListViewActivity">
+        </activity>
     </application>
 
 </manifest>
