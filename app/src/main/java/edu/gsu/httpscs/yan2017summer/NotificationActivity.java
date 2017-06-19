@@ -31,6 +31,7 @@ public class NotificationActivity extends BaseActivity {
     @OnClick(R.id.activity_notification_small)
     public void smallNotification(View v){
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this);
+
         mBuilder.setContentTitle("Title")
                 .setContentText("Text")
                 .setContentIntent(getDefalutIntent(Notification.FLAG_AUTO_CANCEL))

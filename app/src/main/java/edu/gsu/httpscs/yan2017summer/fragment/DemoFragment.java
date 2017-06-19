@@ -14,6 +14,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 import edu.gsu.httpscs.yan2017summer.AdvanceListViewActivity;
+import edu.gsu.httpscs.yan2017summer.AdvanceViewPagerActivity;
 import edu.gsu.httpscs.yan2017summer.LaunchModeActivity;
 import edu.gsu.httpscs.yan2017summer.NotificationActivity;
 import edu.gsu.httpscs.yan2017summer.R;
@@ -36,7 +37,7 @@ public class DemoFragment extends Fragment {
         contentList.add("9Patch");
         contentList.add("Notification");
         contentList.add("AdvanceListView");
-        contentList.add("C");
+        contentList.add("AdvanceViewPager");
         contentList.add("LaunchMode");
         contentList.add("E");
         contentList.add("F");
@@ -80,6 +81,10 @@ public class DemoFragment extends Fragment {
                     case 4:
                         Intent intent4 = new Intent(getActivity(), AdvanceListViewActivity.class);
                         startActivity(intent4);
+                        break;
+                    case 5:
+                        Intent intent5 = new Intent(getActivity(), AdvanceViewPagerActivity.class);
+                        startActivity(intent5);
                         break;
                     case 6:
                         Intent intent6 = new Intent(getActivity(), LaunchModeActivity.class);

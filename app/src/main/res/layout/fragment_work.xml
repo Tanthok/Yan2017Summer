@@ -5,9 +5,63 @@
     tools:context="edu.gsu.httpscs.yan2017summer.fragment.WorkFragment">
 
     <!-- TODO: Update blank fragment layout -->
+    <!--<TextView-->
+        <!--android:layout_marginTop="60sp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/hello_blank_fragment" />-->
     <TextView
+        android:id="@+id/activity_work_top_tv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
+        android:background="@android:color/holo_blue_bright"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:hint="Top Centered Header"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="22sp"/>
+    <TextView
+        android:id="@+id/activity_work_bot_tv"
+        android:layout_width="match_parent"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="bottom"
+        android:hint="Bottom Centered Footer"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="22sp"/>
+<!--Quiz 1 Button Left Side-->
+    <Button
+        android:id="@+id/activity_work_bt_qz1"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:text="Quiz 1" />
+<!--Quiz 2 Button Center-->
+    <Button
+        android:id="@+id/activity_work_bt_qz2"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="Quiz 2" />
+    <!--Quiz 3 Button Right-->
+    <Button
+        android:id="@+id/activity_work_bt_qz3"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="255dp"
+        android:text="Quiz 3" />
+    <!--Submit Button-->
+    <Button
+        android:id="@+id/activity_work_bt_submit"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Submit" />
 </FrameLayout>

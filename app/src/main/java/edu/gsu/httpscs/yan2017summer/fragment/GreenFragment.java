@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import edu.gsu.httpscs.yan2017summer.R;
+import edu.gsu.httpscs.yan2017summer.util.UtilLog;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -54,6 +55,8 @@ public class GreenFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        UtilLog.d("Fragment","Green:onStart");
+
     }
 
     @Override
@@ -61,6 +64,36 @@ public class GreenFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_green, container, false);
+    }
+    @Override
+    public void onStart() {
+        super.onStart();
+        UtilLog.d("Fragment","Green:onStart");
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        UtilLog.d("Fragment","Green:onStart");
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        UtilLog.d("Fragment","Green:onStart");
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        UtilLog.d("Fragment","Green:onStart");
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        UtilLog.d("Fragment","Green:onStart");
     }
 
 }

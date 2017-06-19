@@ -20,6 +20,8 @@
         <activity android:name=".ScaleTypeActivity" />
         <activity android:name=".NotificationActivity" />
         <activity android:name=".LaunchModeActivity" />
+        <activity android:name=".WorkActivity" />
+        <activity android:name=".AdvanceViewPagerActivity" />
         <activity android:name=".AdvanceListViewActivity">
         </activity>
     </application>

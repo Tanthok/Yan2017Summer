@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import edu.gsu.httpscs.yan2017summer.R;
+import edu.gsu.httpscs.yan2017summer.util.UtilLog;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -54,6 +55,8 @@ public class BlueFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        //Log.d("Fragment","onCreate");
+        UtilLog.d("Fragment","BlueonStart");
     }
 
     @Override
@@ -63,4 +66,34 @@ public class BlueFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_blue, container, false);
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        UtilLog.d("Fragment","Blue:onStart");
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        UtilLog.d("Fragment","Blue:onStart");
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        UtilLog.d("Fragment","Blue:onStart");
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        UtilLog.d("Fragment","Blue:onStart");
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        UtilLog.d("Fragment","Blue:onStart");
+    }
 }
