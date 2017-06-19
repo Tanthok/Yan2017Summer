@@ -14,8 +14,8 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 import edu.gsu.httpscs.yan2017summer.AdvanceListViewActivity;
-import edu.gsu.httpscs.yan2017summer.AdvanceViewPagerActivity;
 import edu.gsu.httpscs.yan2017summer.LaunchModeActivity;
+import edu.gsu.httpscs.yan2017summer.NinePatchActivity;
 import edu.gsu.httpscs.yan2017summer.NotificationActivity;
 import edu.gsu.httpscs.yan2017summer.R;
 import edu.gsu.httpscs.yan2017summer.ScaleTypeActivity;
@@ -37,7 +37,7 @@ public class DemoFragment extends Fragment {
         contentList.add("9Patch");
         contentList.add("Notification");
         contentList.add("AdvanceListView");
-        contentList.add("AdvanceViewPager");
+        contentList.add("C");
         contentList.add("LaunchMode");
         contentList.add("E");
         contentList.add("F");
@@ -74,6 +74,10 @@ public class DemoFragment extends Fragment {
                         Intent intent1 = new Intent(getActivity(), ScaleTypeActivity.class);
                         startActivity(intent1);
                         break;
+                    case 2:
+                        Intent intent2 = new Intent(getActivity(), NinePatchActivity.class);
+                        startActivity(intent2);
+                        break;
                     case 3:
                         Intent intent3 = new Intent(getActivity(), NotificationActivity.class);
                         startActivity(intent3);
@@ -81,10 +85,6 @@ public class DemoFragment extends Fragment {
                     case 4:
                         Intent intent4 = new Intent(getActivity(), AdvanceListViewActivity.class);
                         startActivity(intent4);
-                        break;
-                    case 5:
-                        Intent intent5 = new Intent(getActivity(), AdvanceViewPagerActivity.class);
-                        startActivity(intent5);
                         break;
                     case 6:
                         Intent intent6 = new Intent(getActivity(), LaunchModeActivity.class);

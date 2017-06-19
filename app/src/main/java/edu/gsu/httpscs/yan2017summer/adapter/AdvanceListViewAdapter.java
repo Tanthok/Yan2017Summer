@@ -12,6 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import edu.gsu.httpscs.yan2017summer.R;
+import edu.gsu.httpscs.yan2017summer.util.UtilDensity;
 
 /**
  * Created by Tan-AlienwareTower on 6/17/2017.
@@ -56,17 +57,29 @@ public class AdvanceListViewAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
-         viewHolder.tv.setText(list.get(position));
+        viewHolder.tv.setText(list.get(position));
+        viewHolder.lp = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.MATCH_PARENT);
+//        viewHolder.lp = new RelativeLayout.LayoutParams
+//                (RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.MATCH_PARENT);
             if (position%2==0) {
-                //Message from you
+                //Message from you -- RIGHT SIDE
                 viewHolder.rl_odd.setVisibility(View.INVISIBLE);
                 viewHolder.rl_even.setVisibility(View.VISIBLE);
-                viewHolder.tv.setBackgroundResource(R.drawable.chatfrom_bg_focused);
+                viewHolder.tv.setBackgroundResource(R.drawable.chatto_bg_focused);
+                viewHolder.lp.setMargins(0,0,UtilDensity.dip2px(context,70),0);
+                viewHolder.lp.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+                viewHolder.tv.setLayoutParams(viewHolder.lp);
+
             }else{
-                //Message from your friend
+                //Message from your friend -- LEFT SIDE
                 viewHolder.rl_odd.setVisibility(View.VISIBLE);
                 viewHolder.rl_even.setVisibility(View.INVISIBLE);
                 viewHolder.tv.setBackgroundResource(R.drawable.chatfrom_bg_focused);
+                viewHolder.lp.setMargins(UtilDensity.dip2px(context,70),0,0,0);
+                viewHolder.lp.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
+                viewHolder.tv.setLayoutParams(viewHolder.lp);
+
             }
             return convertView;
     }
@@ -74,5 +87,6 @@ public class AdvanceListViewAdapter extends BaseAdapter {
         RelativeLayout rl_odd;
         RelativeLayout rl_even;
         TextView tv;
+        RelativeLayout.LayoutParams lp;
     }
 }

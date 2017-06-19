@@ -22,8 +22,8 @@ public class ScaleTypeActivity extends AppCompatActivity {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_scale_type);   //Video 8 @ 1:12
         list = new ArrayList<View>();
-        viewPager = (ViewPager) findViewById(R.id.activity_scale_view_pager); //After making the viewpager, next make adapter for viewPager  Called "ScalePagerAdapter w/ super class PagerAdapter
-
+        viewPager = (ViewPager) findViewById(R.id.activity_scale_view_pager);
+        //After making the viewpager, next make adapter for viewPager  Called "ScalePagerAdapter w/ super class PagerAdapter
         LayoutInflater lf = getLayoutInflater().from(this);
         view1 = lf.inflate(R.layout.view_scale_centerinside, null);
         view2 = lf.inflate(R.layout.view_scale_center, null);
