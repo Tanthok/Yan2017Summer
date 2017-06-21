@@ -10,18 +10,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.RadioGroup;
 
 import java.util.ArrayList;
 
 import edu.gsu.httpscs.yan2017summer.ActivityA;
 import edu.gsu.httpscs.yan2017summer.AdvanceListViewActivity;
 import edu.gsu.httpscs.yan2017summer.AdvanceViewPagerActivity;
+import edu.gsu.httpscs.yan2017summer.CheckBoxActivity;
 import edu.gsu.httpscs.yan2017summer.NinePatchActivity;
 import edu.gsu.httpscs.yan2017summer.NotificationActivity;
 import edu.gsu.httpscs.yan2017summer.R;
+import edu.gsu.httpscs.yan2017summer.RadioGroupActivity;
+import edu.gsu.httpscs.yan2017summer.ResultActivity;
 import edu.gsu.httpscs.yan2017summer.ScaleTypeActivity;
 import edu.gsu.httpscs.yan2017summer.ViewPagerActivity;
 import edu.gsu.httpscs.yan2017summer.adapter.ListNormalAdapter;
+import edu.gsu.httpscs.yan2017summer.audio.BaseBean;
 
 public class DemoFragment extends Fragment {
 
@@ -40,9 +45,9 @@ public class DemoFragment extends Fragment {
         contentList.add("AdvanceListView");
         contentList.add("AdvanceViewPagerActivity");
         contentList.add("LaunchMode");
-        contentList.add("E");
-        contentList.add("F");
-        contentList.add("G");
+        contentList.add("ActivityResult");
+        contentList.add("RadioGroup");
+        contentList.add("CheckBox");
         contentList.add("H");
         contentList.add("I");
         contentList.add("J");
@@ -93,7 +98,30 @@ public class DemoFragment extends Fragment {
                         break;
                     case 6:
                         Intent intent6 = new Intent(getActivity(), ActivityA.class);
+                        intent6.putExtra("StringInfo","fromDemoFragment");
+                        intent6.putExtra("IntegerInfo",10);
+                        Bundle bundle = new Bundle();
+                        BaseBean bean = new BaseBean();
+                        bean.setName("bean");
+                        bundle.putString("StringBundle","FromBundleDemo");
+                        bundle.putInt("IntegerBUndle",101);
+                        bundle.putSerializable("Object",bean);
+                        intent6.putExtra("Bundle",bundle);
+//                        bundle.putString("StringBundle","FromBundleDemo");
+//                        bundle.putInt("IntegerBundle",101);
                         startActivity(intent6);
+                        break;
+                    case 7:
+                        Intent intent7 = new Intent(getActivity(), ResultActivity.class);
+                        startActivityForResult(intent7,400);
+                        break;
+                    case 8:
+                        Intent intent8 = new Intent(getActivity(), RadioGroupActivity.class);
+                        startActivity(intent8);
+                        break;
+                    case 9:
+                        Intent intent9 = new Intent(getActivity(), CheckBoxActivity.class);
+                        startActivity(intent9);
                     default:
                 }
             }

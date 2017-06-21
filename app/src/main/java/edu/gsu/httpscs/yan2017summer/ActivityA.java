@@ -10,12 +10,13 @@ import android.widget.Toast;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import edu.gsu.httpscs.yan2017summer.audio.BaseBean;
 
 /**
  * Created by Tan-AlienwareTower on 6/21/2017.
  */
 
-public class ActivityA extends AppCompatActivity {
+public class ActivityA extends BaseActivity {
 
 
 //    @OnClick
@@ -48,5 +49,21 @@ public class ActivityA extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a);
         Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show();
+        ButterKnife.bind(this);
+        Intent intent = getIntent();
+        Bundle bundle = intent.getBundleExtra("Bundle");
+        String bs = bundle.getString("StringBundle");
+        int bi = bundle.getInt("IntegerBundle",0);
+        BaseBean bean = (BaseBean) bundle.getSerializable("Object");
+        shortToast(bean.getName());
+        shortToast(bs);
+        shortToast("Integer is:"+bi);
+
+//        intent.getStringExtra("StringInfo");
+//        int i = intent.getIntExtra("Integer",0);
+//        shortToast(s);
+//        shortToast(String.valueOf(i));
+//        shortToast(i+"");
+//        shortToast("Integer is:"+bi);
     }
 }
