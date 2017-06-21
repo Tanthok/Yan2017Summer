@@ -22,7 +22,7 @@
         <activity android:name=".WorkActivity" />
         <activity android:name=".AdvanceViewPagerActivity" />
         <activity android:name=".AdvanceListViewActivity"/>
-        <!--<activity android:name=".NinePatchActivity" />-->
+        <activity android:name=".NinePatchActivity" />
         <activity android:name=".ActivityA"
             android:launchMode="standard"/>
         <activity android:name=".ActivityB"
