@@ -19,14 +19,18 @@
         <activity android:name=".ViewPagerActivity" />
         <activity android:name=".ScaleTypeActivity" />
         <activity android:name=".NotificationActivity" />
-        <activity android:name=".LaunchModeActivity" />
         <activity android:name=".WorkActivity" />
         <activity android:name=".AdvanceViewPagerActivity" />
-        <activity android:name=".AdvanceListViewActivity">
-            <activity android:name=".adapter.NinePatchActivity" />
-        </activity>
-        />
-        <activity android:name=".NinePatchActivity"></activity>
+        <activity android:name=".AdvanceListViewActivity"/>
+        <activity android:name=".NinePatchActivity" />
+        <activity android:name=".ActivityA"
+            android:launchMode="standard"/>
+        <activity android:name=".ActivityB"
+            android:launchMode="singleTop"/>
+        <activity android:name=".ActivityC"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ActivityD"
+            android:launchMode="singleInstance"/>
     </application>
 
 </manifest>

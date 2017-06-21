@@ -15,7 +15,7 @@ import butterknife.OnClick;
  * Created by Tan-AlienwareTower on 6/21/2017.
  */
 
-public class ActivityA extends AppCompatActivity {
+public class ActivityB extends AppCompatActivity {
 
 
 //    @OnClick
@@ -46,7 +46,7 @@ public class ActivityA extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_a);
+        setContentView(R.layout.activity_b);
         Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show();
     }
 }

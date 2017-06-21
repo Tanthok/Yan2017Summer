@@ -1,25 +1,12 @@
 package edu.gsu.httpscs.yan2017summer;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
-import android.widget.BaseAdapter;
 import android.widget.Toast;
 
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-
-/**
- * Created by Tan-AlienwareTower on 6/21/2017.
- */
-
-public class ActivityA extends AppCompatActivity {
-
-
-//    @OnClick
-
+public class ActivityC extends AppCompatActivity {
 
 
     public void gotoAActivity(View v){
@@ -46,7 +33,8 @@ public class ActivityA extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_a);
+        setContentView(R.layout.activity_c);
         Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show();
+
     }
 }

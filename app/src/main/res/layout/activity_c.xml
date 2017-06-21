@@ -4,48 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.gsu.httpscs.yan2017summer.ActivityA">
+    tools:context="edu.gsu.httpscs.yan2017summer.ActivityC">
 
     <TextView
-        android:id="@+id/activity_atxt"
+        android:id="@+id/activity_ctxt"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="A"
+        android:text="C"
         android:textSize="88sp"
         android:gravity="center" />
 
     <Button
-        android:id="@+id/activity_a_a_bt"
+        android:id="@+id/activity_d_a_bt"
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:text="A"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:onClick="gotoAActivity"/>
-    />
     <Button
-        android:id="@+id/activity_a_b_bt"
+        android:id="@+id/activity_d_b_bt"
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:text="B"
         android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/activity_a_a_bt"
+        android:layout_toEndOf="@+id/activity_d_a_bt"
         android:onClick="gotoBActivity"/>
     <Button
-        android:id="@+id/activity_a_c_bt"
+        android:id="@+id/activity_d_c_bt"
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:text="C"
         android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/activity_a_b_bt"
+        android:layout_toEndOf="@+id/activity_d_b_bt"
         android:onClick="gotoCActivity"/>
-    />
     <Button
-        android:id="@+id/activity_a_d_bt"
+        android:id="@+id/activity_d_d_bt"
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:text="D"
         android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/activity_a_c_bt"
+        android:layout_toEndOf="@+id/activity_d_c_bt"
         android:onClick="gotoDActivity"/>
 </RelativeLayout>
