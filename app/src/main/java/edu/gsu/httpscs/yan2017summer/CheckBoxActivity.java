@@ -28,10 +28,11 @@ public class CheckBoxActivity extends BaseActivity{
     @OnClick(R.id.activity_check_box_submit)
 //    CheckBox    checkboxsubmit;
     public void  submit(View v){
+        //This for loop is used to get all the checked box's
         String s= "You Checked";
         for(Map.Entry<String,Boolean> entry: list.entrySet()){
             if(entry.getValue()){
-                s=s+""+entry.getKey();
+                s=s+" "+entry.getKey();
             }
         }
         shortToast(s);
@@ -54,6 +55,7 @@ public class CheckBoxActivity extends BaseActivity{
                 list.put(buttonView.getText().toString(),isChecked);
             }
         });
+
         checkbox3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked){

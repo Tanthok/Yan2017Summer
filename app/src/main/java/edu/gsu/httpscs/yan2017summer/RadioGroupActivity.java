@@ -11,14 +11,14 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class RadioGroupActivity extends BaseActivity {
-    private int checkedId;
+    private int checkedID;
 
     @BindView(R.id.activity_radio_group)
     RadioGroup radioGroup;
 
     @OnClick(R.id.activity_radio_group_submit)
     public void submit(View v){
-        shortToast("You chose RadioButton"+checkedId);
+        shortToast("You chose RadioButton"+checkedID);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class RadioGroupActivity extends BaseActivity {
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener(){
             @Override
             public void onCheckedChanged(RadioGroup group, @IdRes int checkedId){
-                checkedId = checkedId;
+                checkedID = checkedId;
             }
         });
     }

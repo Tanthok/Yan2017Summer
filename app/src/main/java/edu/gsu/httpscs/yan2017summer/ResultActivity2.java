@@ -15,7 +15,7 @@ public class ResultActivity2 extends AppCompatActivity {
     @Override
     public void onBackPressed(){
         Intent intent = new Intent();
-        intent.putExtra("Data","data");
+        intent.putExtra("Data","Data");
         setResult(RESULT_OK,intent);
         super.onBackPressed();
     }

@@ -18,6 +18,7 @@ import edu.gsu.httpscs.yan2017summer.ActivityA;
 import edu.gsu.httpscs.yan2017summer.AdvanceListViewActivity;
 import edu.gsu.httpscs.yan2017summer.AdvanceViewPagerActivity;
 import edu.gsu.httpscs.yan2017summer.CheckBoxActivity;
+import edu.gsu.httpscs.yan2017summer.DialogActivity;
 import edu.gsu.httpscs.yan2017summer.NinePatchActivity;
 import edu.gsu.httpscs.yan2017summer.NotificationActivity;
 import edu.gsu.httpscs.yan2017summer.R;
@@ -48,7 +49,7 @@ public class DemoFragment extends Fragment {
         contentList.add("ActivityResult");
         contentList.add("RadioGroup");
         contentList.add("CheckBox");
-        contentList.add("H");
+        contentList.add("Dialog");
         contentList.add("I");
         contentList.add("J");
         contentList.add("K");
@@ -122,6 +123,11 @@ public class DemoFragment extends Fragment {
                     case 9:
                         Intent intent9 = new Intent(getActivity(), CheckBoxActivity.class);
                         startActivity(intent9);
+                        break;
+                    case 10:
+                        Intent intent10 = new Intent(getActivity(), DialogActivity.class);
+                        startActivity(intent10);
+                        break;
                     default:
                 }
             }
