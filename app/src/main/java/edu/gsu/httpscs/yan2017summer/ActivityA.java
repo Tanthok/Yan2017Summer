@@ -51,13 +51,13 @@ public class ActivityA extends BaseActivity {
         Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show();
         ButterKnife.bind(this);
         Intent intent = getIntent();
-        Bundle bundle = intent.getBundleExtra("Bundle");
-        String bs = bundle.getString("StringBundle");
-        int bi = bundle.getInt("IntegerBundle",0);
-        BaseBean bean = (BaseBean) bundle.getSerializable("Object");
-        shortToast(bean.getName());
-        shortToast(bs);
-        shortToast("Integer is:"+bi);
+//        Bundle bundle = intent.getBundleExtra("Bundle");
+//        String bs = bundle.getString("StringBundle");
+//        int bi = bundle.getInt("IntegerBundle",0);
+//        BaseBean bean = (BaseBean) bundle.getSerializable("Object");
+//        shortToast(bean.getName());
+//        shortToast(bs);
+//        shortToast("Integer is:"+bi);
 
 //        intent.getStringExtra("StringInfo");
 //        int i = intent.getIntExtra("Integer",0);

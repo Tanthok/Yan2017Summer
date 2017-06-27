@@ -53,7 +53,8 @@ public class DialogActivity extends BaseActivity {
                                 shortToast(msg);
                             }
                         });
-                customDialog.setCanceledOnTouchOutside(true);       //This ables the user to touch the empty space to go back
+                //This ables the user to touch the empty space to go back
+                customDialog.setCanceledOnTouchOutside(true);
                 customDialog.show();
                 break;
             default:
