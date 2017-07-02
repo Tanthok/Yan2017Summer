@@ -43,7 +43,9 @@
         <activity android:name=".CheckBoxActivity" />
         <activity android:name=".HandlerActivity" />
         <activity android:name=".RunableHandlerActivity" />
-        <activity android:name=".AnimationActivity"></activity>
+        <activity android:name=".AnimatorActivity" />
+        <activity android:name=".GestureActivity" />
+        <activity android:name=".SharedPreferenceActivity"></activity>
     </application>
 
 </manifest>
