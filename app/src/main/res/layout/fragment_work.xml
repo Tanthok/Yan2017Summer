@@ -1,67 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="edu.gsu.httpscs.yan2017summer.fragment.WorkFragment">
+    android:layout_height="match_parent">
+    <RadioGroup
+        android:id="@+id/activity_work_rdg"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <!--<TextView-->
+
+    <RadioButton
+        android:id="@+id/activity_work_custom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="left|center_vertical"
+        android:text="CustomDialog"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/activity_work_ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginBottom="100dp"
+        android:text="OK"/>
+</LinearLayout>
+        <!-- TODO: Update blank fragment layout -->
+        <!--<TextView-->
         <!--android:layout_marginTop="60sp"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent"-->
         <!--android:text="@string/hello_blank_fragment" />-->
-    <TextView
-        android:id="@+id/activity_work_top_tv"
-        android:layout_width="match_parent"
-        android:background="@android:color/holo_blue_bright"
-        android:layout_height="60dp"
-        android:layout_centerVertical="true"
-        android:hint="Top Centered Header"
-        android:textColor="@android:color/white"
-        android:gravity="center"
-        android:textSize="22sp"/>
-    <TextView
-        android:id="@+id/activity_work_bot_tv"
-        android:layout_width="match_parent"
-        android:background="@android:color/holo_blue_bright"
-        android:layout_height="60dp"
-        android:layout_centerVertical="true"
-        android:layout_gravity="bottom"
-        android:hint="Bottom Centered Footer"
-        android:textColor="@android:color/white"
-        android:gravity="center"
-        android:textSize="22sp"/>
-<!--Quiz 1 Button Left Side-->
-    <Button
-        android:id="@+id/activity_work_bt_qz1"
-        android:layout_width="130dp"
-        android:layout_height="60dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="60dp"
-        android:text="Quiz 1" />
+        <!--<TextView-->
+        <!--android:id="@+id/activity_work_top_tv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="@android:color/holo_blue_bright"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:hint="Top Centered Header"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="22sp"/>-->
+        <!--<TextView-->
+        <!--android:id="@+id/activity_work_bot_tv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="@android:color/holo_blue_bright"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:hint="Bottom Centered Footer"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="22sp"/>-->
+        <!--Quiz 1 Button Left Side-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/activity_dialog_rb8"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="left|center_vertical"-->
+        <!--android:text="CustomDialog"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/activity_dialog_ok"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="OK" />-->
 <!--Quiz 2 Button Center-->
-    <Button
-        android:id="@+id/activity_work_bt_qz2"
-        android:layout_width="130dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="60dp"
-        android:text="Quiz 2" />
+            <!--<Button-->
+                <!--android:id="@+id/activity_work_bt_qz2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="60dp"-->
+                <!--android:text="Quiz 2" />-->
     <!--Quiz 3 Button Right-->
-    <Button
-        android:id="@+id/activity_work_bt_qz3"
-        android:layout_width="130dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginLeft="255dp"
-        android:text="Quiz 3" />
+                    <!--<Button-->
+                        <!--android:id="@+id/activity_work_bt_qz3"-->
+                        <!--android:layout_width="130dp"-->
+                        <!--android:layout_height="60dp"-->
+                        <!--android:layout_marginTop="60dp"-->
+                        <!--android:layout_marginLeft="255dp"-->
+                        <!--android:text="Quiz 3" />-->
     <!--Submit Button-->
-    <Button
-        android:id="@+id/activity_work_bt_submit"
-        android:layout_width="370dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="120dp"
-        android:background="@android:color/holo_blue_bright"
-        android:text="Submit" />
-</LinearLayout>
+    <!--<Button-->
+        <!--android:id="@+id/activity_work_bt_submit"-->
+        <!--android:layout_width="370dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="120dp"-->
+        <!--android:background="@android:color/holo_blue_bright"-->
+        <!--android:text="Submit" />-->
+

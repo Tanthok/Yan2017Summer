@@ -29,6 +29,7 @@ import edu.gsu.httpscs.yan2017summer.RadioGroupActivity;
 import edu.gsu.httpscs.yan2017summer.ResultActivity;
 import edu.gsu.httpscs.yan2017summer.RunableHandlerActivity;
 import edu.gsu.httpscs.yan2017summer.ScaleTypeActivity;
+import edu.gsu.httpscs.yan2017summer.ServiceActivity;
 import edu.gsu.httpscs.yan2017summer.SharedPreferenceActivity;
 import edu.gsu.httpscs.yan2017summer.ViewPagerActivity;
 import edu.gsu.httpscs.yan2017summer.adapter.ListNormalAdapter;
@@ -61,7 +62,7 @@ public class DemoFragment extends Fragment {
         contentList.add("Animator");
         contentList.add("Gesture");
         contentList.add("Shared Preference");
-        contentList.add("dd");
+        contentList.add("Service&Broadcast");
     }
 
     @Override
@@ -159,6 +160,10 @@ public class DemoFragment extends Fragment {
                     case 16:
                         Intent intent16 = new Intent(getActivity(), SharedPreferenceActivity.class);
                         startActivity(intent16);
+                        break;
+                    case 17:
+                        Intent intent17 = new Intent(getActivity(), ServiceActivity.class);
+                        startActivity(intent17);
                         break;
                     default:
                 }

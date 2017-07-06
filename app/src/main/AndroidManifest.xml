@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.gsu.httpscs.yan2017summer">
 
+    <provider
+        android:name=".content.Provider"
+        android:authorities="edu.gsu.httpscs.yan2017summer"
+        android:exported="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -45,7 +50,12 @@
         <activity android:name=".RunableHandlerActivity" />
         <activity android:name=".AnimatorActivity" />
         <activity android:name=".GestureActivity" />
-        <activity android:name=".SharedPreferenceActivity"></activity>
+        <activity android:name=".SharedPreferenceActivity" />
+        <activity android:name=".ServiceActivity" />
+
+        <service android:name=".service.TestService" />
+
+        <activity android:name=".QuizThreeActivity"></activity>
     </application>
 
 </manifest>
