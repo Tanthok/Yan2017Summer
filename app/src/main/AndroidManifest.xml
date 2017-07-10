@@ -24,7 +24,6 @@
         <activity android:name=".ViewPagerActivity" />
         <activity android:name=".ScaleTypeActivity" />
         <activity android:name=".NotificationActivity" />
-        <activity android:name=".WorkActivity" />
         <activity android:name=".AdvanceViewPagerActivity" />
         <activity android:name=".AdvanceListViewActivity" />
         <activity android:name=".NinePatchActivity" />
@@ -57,7 +56,10 @@
 
         <activity android:name=".QuizThreeActivity" />
         <activity android:name=".Quiz3" />
-        <activity android:name=".CustomDialog2"></activity>
+        <activity
+            android:name=".ViewPagerActivityQuiz4"
+            android:label="@string/title_activity_quiz4"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -24,6 +24,7 @@ import edu.gsu.httpscs.yan2017summer.GestureActivity;
 import edu.gsu.httpscs.yan2017summer.HandlerActivity;
 import edu.gsu.httpscs.yan2017summer.NinePatchActivity;
 import edu.gsu.httpscs.yan2017summer.NotificationActivity;
+import edu.gsu.httpscs.yan2017summer.ViewPagerActivityQuiz4;
 import edu.gsu.httpscs.yan2017summer.R;
 import edu.gsu.httpscs.yan2017summer.RadioGroupActivity;
 import edu.gsu.httpscs.yan2017summer.ResultActivity;
@@ -63,6 +64,7 @@ public class DemoFragment extends Fragment {
         contentList.add("Gesture");
         contentList.add("Shared Preference");
         contentList.add("Service&Broadcast");
+        contentList.add("Quiz4");
     }
 
     @Override
@@ -164,6 +166,10 @@ public class DemoFragment extends Fragment {
                     case 17:
                         Intent intent17 = new Intent(getActivity(), ServiceActivity.class);
                         startActivity(intent17);
+                        break;
+                    case 18:
+                        Intent intent18 = new Intent(getActivity(), ViewPagerActivityQuiz4.class);
+                        startActivity(intent18);
                         break;
                     default:
                 }
