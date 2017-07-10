@@ -55,7 +55,9 @@
 
         <service android:name=".service.TestService" />
 
-        <activity android:name=".QuizThreeActivity"></activity>
+        <activity android:name=".QuizThreeActivity" />
+        <activity android:name=".Quiz3" />
+        <activity android:name=".CustomDialog2"></activity>
     </application>
 
 </manifest>

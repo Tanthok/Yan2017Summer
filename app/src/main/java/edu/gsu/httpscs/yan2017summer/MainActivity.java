@@ -26,12 +26,10 @@ public class MainActivity extends AppCompatActivity {
     private void initialView() {
         tv_demo=(TextView)findViewById(R.id.activity_tool_demo);
         tv_work=(TextView)findViewById(R.id.activity_tool_work);
-
     }
     private void setListener() {
         final WorkFragment workFragment = new WorkFragment();
         final DemoFragment demoFragment = new DemoFragment();
-
 
 //        "Work" way to make a clickable click reaction
         tv_demo.setOnClickListener(new View.OnClickListener() {

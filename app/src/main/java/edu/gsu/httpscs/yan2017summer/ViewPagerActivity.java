@@ -33,7 +33,7 @@ public class ViewPagerActivity extends AppCompatActivity {
         list.add(new BlueFragment());
         BaseViewPagerAdapter pagerAdapter = new BaseViewPagerAdapter(getSupportFragmentManager(),list);
         viewPager.setAdapter(pagerAdapter);
-        //viewPager.setNestedScrollingEnabled(true);
+        viewPager.setNestedScrollingEnabled(true);
         viewPager.setCurrentItem(1); //Is a way to set what page you want the user to see first with in a fragment
     }
     public ViewPagerActivity() {

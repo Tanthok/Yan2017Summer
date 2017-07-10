@@ -1,12 +1,14 @@
 package edu.gsu.httpscs.yan2017summer.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import edu.gsu.httpscs.yan2017summer.Quiz3;
 import edu.gsu.httpscs.yan2017summer.R;
 
 /**
@@ -47,14 +49,17 @@ public class WorkFragment extends Fragment {
         return fragment;
     }
 
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+        Intent intent = new Intent(getActivity(), Quiz3.class);
+        startActivity(intent);
+
+
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

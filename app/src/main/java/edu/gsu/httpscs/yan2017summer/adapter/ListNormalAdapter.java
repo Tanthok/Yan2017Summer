@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 import edu.gsu.httpscs.yan2017summer.R;
 
-/**
+/**w
  ListNormalAdapter is Java file in a Package, next
  SuperClass is BaseAdapter, next
  To get Methods alt+enter
