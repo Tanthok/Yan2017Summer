@@ -5,32 +5,43 @@ import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import edu.gsu.httpscs.yan2017summer.util.UtilLog;
 
-public class GestureActivity extends BaseActivity implements View.OnTouchListener {
+public class Quiz5Activity extends BaseActivity implements View.OnTouchListener  {
 
 
-    @BindView(R.id.activity_gesture_tv)
+//    @BindView(R.id.activity_gesture_quiz5_tv)
+//    TextView tv;
+
+    @BindView(R.id.activity_gesture_quiz5_tv)
     TextView tv;
+
 
     private GestureDetector gestureDectector;
     private int sumX = 0;
     private int sumY = 0;
+    private Animation transAnimation;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gesture);
+        setContentView(R.layout.activity_quiz5);
         ButterKnife.bind(this);
 
-        gestureDectector = new GestureDetector(this, new simpleGestureLister());
+        transAnimation = AnimationUtils.loadAnimation(this, R.anim.anim_trans);
+
+        gestureDectector = new GestureDetector(this, new Quiz5Activity.simpleGestureLister());
         tv.setOnTouchListener(this);
         tv.setFocusable(true);
         tv.setClickable(true);
         tv.setLongClickable(true);
+
     }
     @Override
     public boolean onTouch(View v, MotionEvent event){
@@ -52,6 +63,9 @@ public class GestureActivity extends BaseActivity implements View.OnTouchListene
         }
         @Override
         public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
+            //Quiz 5 stuff
+
+            //Quiz 5 stuff
             UtilLog.d("Gesture","onSingleTapUp");
             UtilLog.d("Gesture","distanceX:"+distanceX);
             UtilLog.d("Gesture","distanceY:"+distanceY);
@@ -65,6 +79,8 @@ public class GestureActivity extends BaseActivity implements View.OnTouchListene
             if(sumX<0){
                 if(Math.abs(sumX)>200){
                     shortToast("You scroll from Left to Right");
+                    tv.startAnimation(transAnimation);
+
                 }
             }
             if(sumX>0){

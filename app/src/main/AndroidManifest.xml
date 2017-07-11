@@ -56,10 +56,8 @@
 
         <activity android:name=".QuizThreeActivity" />
         <activity android:name=".Quiz3" />
-        <activity
-            android:name=".ViewPagerActivityQuiz4"
-            android:label="@string/title_activity_quiz4"
-            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity android:name=".Quiz5Activity" />
+        <activity android:name=".Quiz4AnimatorActivity"></activity>
     </application>
 
 </manifest>

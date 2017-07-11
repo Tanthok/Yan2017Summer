@@ -1,0 +1,42 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gsu.httpscs.yan2017summer.GestureActivity">
+
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+        <Button
+            android:id="@+id/animator_bt_start"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:text="Start"/>
+        <TextView
+            android:id="@+id/animator_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@android:color/holo_blue_bright"
+            android:textSize="23sp"
+            android:text="Hello.Android"/>
+        <Button
+            android:id="@+id/animator_bt_stop"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="Stop"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

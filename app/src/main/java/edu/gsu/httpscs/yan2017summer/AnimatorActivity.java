@@ -99,6 +99,9 @@ public class AnimatorActivity extends BaseActivity {
 
     }
 
+//    @BindView(R.id.animator_tv)
+//    TextView tv;
+
     @BindView(R.id.animator_tv)
     TextView tv;
 
