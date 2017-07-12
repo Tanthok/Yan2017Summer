@@ -16,6 +16,6 @@
         android:textSize="100sp"
         android:gravity="center"
         android:background="@android:color/holo_blue_bright"
-        android:visibility="invisible"
+        android:visibility="visible"
         />
 </LinearLayout>

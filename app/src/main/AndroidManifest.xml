@@ -54,10 +54,10 @@
 
         <service android:name=".service.TestService" />
 
-        <activity android:name=".QuizThreeActivity" />
         <activity android:name=".Quiz3" />
         <activity android:name=".Quiz5Activity" />
-        <activity android:name=".Quiz4AnimatorActivity"></activity>
+        <activity android:name=".Quiz4AnimatorActivity" />
+        <activity android:name=".Quiz4AdvanceListViewActivity"></activity>
     </application>
 
 </manifest>

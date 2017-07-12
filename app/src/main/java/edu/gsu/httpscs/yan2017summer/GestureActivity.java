@@ -47,21 +47,22 @@ public class GestureActivity extends BaseActivity implements View.OnTouchListene
         }
         @Override
         public void onLongPress(MotionEvent e) {
-            UtilLog.d("Gesture","onSingleTapUp");
+            UtilLog.d("Gesture","onLongPress");
             super.onLongPress(e);
         }
         @Override
         public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
-            UtilLog.d("Gesture","onSingleTapUp");
+            UtilLog.d("Gesture","onScroll");
             UtilLog.d("Gesture","distanceX:"+distanceX);
             UtilLog.d("Gesture","distanceY:"+distanceY);
             sumX+=distanceX;
             sumY+=distanceY;
             return super.onScroll(e1, e2, distanceX, distanceY);
+
         }
         @Override
         public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-            UtilLog.d("Gesture","onSingleTapUp");
+            UtilLog.d("Gesture","onFling");
             if(sumX<0){
                 if(Math.abs(sumX)>200){
                     shortToast("You scroll from Left to Right");
@@ -82,31 +83,37 @@ public class GestureActivity extends BaseActivity implements View.OnTouchListene
                     shortToast("You scroll from Bottom to Top");
                 }
             }
+            if (sumX>200){
+                sumX=0;
+            }
+            if (sumY>200){
+                sumY=0;
+            }
             return super.onFling(e1, e2, velocityX, velocityY);
         }
         @Override
         public void onShowPress(MotionEvent e) {
-            UtilLog.d("Gesture","onSingleTapUp");
+            UtilLog.d("Gesture","onShowPress");
             super.onShowPress(e);
         }
         @Override
         public boolean onDown(MotionEvent e) {
-            UtilLog.d("Gesture","onSingleTapUp");
+            UtilLog.d("Gesture","onDown");
             return super.onDown(e);
         }
         @Override
         public boolean onDoubleTap(MotionEvent e) {
-            UtilLog.d("Gesture","onSingleTapUp");
+            UtilLog.d("Gesture","onDoubleTap");
             return super.onDoubleTap(e);
         }
         @Override
         public boolean onDoubleTapEvent(MotionEvent e) {
-            UtilLog.d("Gesture","onSingleTapUp");
+            UtilLog.d("Gesture","onDoubleTapEvent");
             return super.onDoubleTapEvent(e);
         }
         @Override
         public boolean onSingleTapConfirmed(MotionEvent e) {
-            UtilLog.d("Gesture","onSingleTapUp");
+            UtilLog.d("Gesture","onSingleTapConfirmed");
             return super.onSingleTapConfirmed(e);
         }
     }
